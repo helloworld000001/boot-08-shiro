@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.LinkedHashMap;
+
 /**
  * @auther 陈彤琳
  * @Description $
@@ -15,10 +17,33 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ShiroConfig {
     // ShiroFilterFactoryBean
+    @Bean
     public ShiroFilterFactoryBean getShiroFilterFactoryBean(@Qualifier("securityManager") DefaultWebSecurityManager securityManager){
         ShiroFilterFactoryBean bean = new ShiroFilterFactoryBean();
         // 设置安全管理器
         bean.setSecurityManager(securityManager);
+
+        // 添加shrio的内置过滤器
+        /*
+        * anon:无需认证就可以访问
+        * authc: 必须认证才可以访问
+        * user: 必须拥有 记住我 才能使用
+        * perms: 拥有某个资源的权限才能使用
+        * role: 拥有某个角色权限才能使用
+        * */
+
+        LinkedHashMap<String, String> filterMap = new LinkedHashMap<>();
+        /*filterMap.put("/user/add", "authc");
+        filterMap.put("/user/update", "authc");
+        也可以改成以下代码，对user/下所有资源使用authc权限拦截 */
+        filterMap.put("/user/*", "authc");
+
+        // 如果没有登录，就去登录页面。这里设置登录页面
+        bean.setLoginUrl("/toLogin");
+
+
+        bean.setFilterChainDefinitionMap(filterMap);
+
         return bean;
     }
 
