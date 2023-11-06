@@ -57,7 +57,7 @@ public class ShiroConfig {
         return securityManager;
     }
 
-    // 创建 realm 对象，需要自定义realm类
+    // 创建 realm 对象，需要自定义realm类:定义认证规则
     @Bean
     public UserRealm userRealm(){
         return new UserRealm();
