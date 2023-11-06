@@ -30,4 +30,9 @@ public class MyController {
     public String update(){
         return "user/update";
     }
+
+    @RequestMapping("/toLogin")
+    public String toLogin(){
+        return "login";
+    }
 }
