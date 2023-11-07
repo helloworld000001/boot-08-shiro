@@ -5,11 +5,13 @@ import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import sun.misc.Contended;
 
 import javax.jws.WebParam;
@@ -28,11 +30,13 @@ public class MyController {
         return "index";
     }
 
+    @RequiresPermissions(value = {"user:add"})
     @RequestMapping("/user/add")
     public String add(){
         return "user/add";
     }
 
+    @RequiresPermissions(value = {"user:update"})
     @RequestMapping("/user/update")
     public String update(){
         return "user/update";
@@ -64,5 +68,11 @@ public class MyController {
         }
 
 
+    }
+
+    @RequestMapping("/noauth")
+    @ResponseBody
+    public String unauthorized(){
+        return "未经授权无法访问该页面";
     }
 }
