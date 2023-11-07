@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b1833f-b275-4dc3-a860-8db14fda34d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-shiro/target/classes/Quickstart.class" beforeDir="false" afterPath="$PROJECT_DIR$/hello-shiro/target/classes/Quickstart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/ShiroConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/UserRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/test/java/com/kuang/ShiroSpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/test/java/com/kuang/ShiroSpringbootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,12 +105,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Users\user\Documents\springboot\boot-08-shiro\shiro-springboot\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Users\user\Documents\springboot\boot-08-shiro\hello-shiro\src\main\java" />
       <recent name="F:\Users\user\Documents\springboot\boot-08-shiro\hello-shiro\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kuang.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Users\user\Documents\springboot\boot-08-shiro\shiro-springboot\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -181,9 +176,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Quickstart" />
         <item itemvalue="JUnit.ShiroSpringbootApplicationTests.contextLoads" />
         <item itemvalue="JUnit.ShiroSpringbootApplicationTests" />
-        <item itemvalue="Application.Quickstart" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +195,7 @@
       <workItem from="1699061895316" duration="616000" />
       <workItem from="1699250837989" duration="659000" />
       <workItem from="1699251529138" duration="5154000" />
-      <workItem from="1699322528935" duration="339000" />
+      <workItem from="1699322528935" duration="7766000" />
     </task>
     <servers />
   </component>

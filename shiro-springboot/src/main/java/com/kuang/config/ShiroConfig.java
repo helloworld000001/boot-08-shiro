@@ -33,6 +33,13 @@ public class ShiroConfig {
         * */
 
         LinkedHashMap<String, String> filterMap = new LinkedHashMap<>();
+
+        /* 必须先授权再拦截，否则授权会失效：*/
+        /* 1 授权操作: 所有访问/user/add的资源必须拥有user:add权限；可以再Realm中设置权限 */
+        filterMap.put("/user/add", "perms[user:add]");
+        filterMap.put("/user/update", "perms[user:update]");
+
+        /* 2 拦截操作 */
         /*filterMap.put("/user/add", "authc");
         filterMap.put("/user/update", "authc");
         也可以改成以下代码，对user/下所有资源使用authc权限拦截 */
@@ -40,6 +47,8 @@ public class ShiroConfig {
 
         // 如果没有登录，就去登录页面。这里设置登录页面
         bean.setLoginUrl("/toLogin");
+        // 如果没有授权，就跳转到授权页面
+        bean.setUnauthorizedUrl("/noauth");
 
 
         bean.setFilterChainDefinitionMap(filterMap);
