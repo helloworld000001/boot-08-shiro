@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="https://www.thymeleaf.org/thymeleaf-extras-shiro">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,7 +9,17 @@
 <h1>首页</h1>
 <p th:text="${msg}"></p>
 
+<!-- 当User登录成功，在session中存入user对象，如果session中没有User对象就显示登录按钮 -->
+<div th:if="${session.loginUser==null}">
+    <a th:href="@{/toLogin}">登录</a>
+</div>
+
+<!-- 只有当拥有user:add权限时才会显示-->
+<div shiro:hasPermission="user:add">
 <a th:href="@{/user/add}">add</a>
+</div>
+<div shiro:hasPermission="user:update">
 <a th:href="@{/user/update}">update</a>
+</div>
 </body>
 </html>
