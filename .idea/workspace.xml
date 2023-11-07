@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b1833f-b275-4dc3-a860-8db14fda34d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shiro-springboot/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/config/UserRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/java/com/kuang/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-springboot/src/test/java/com/kuang/ShiroSpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-springboot/src/test/java/com/kuang/ShiroSpringbootApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +23,62 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="root@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="root@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="root@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="shiro: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="root@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="shiro: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="FxmlFile" />
+        <option value="mybatis-mapper" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\Users\user\Documents\springboot\boot-08-shiro\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -42,11 +97,13 @@
   <component name="ProjectId" id="2Xgs7gwOmdWaMtXXxNcanXUQ9Re" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/hello-shiro/src/main/java" />
@@ -56,6 +113,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Users\user\Documents\springboot\boot-08-shiro\shiro-springboot\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Users\user\Documents\springboot\boot-08-shiro\hello-shiro\src\main\java" />
       <recent name="F:\Users\user\Documents\springboot\boot-08-shiro\hello-shiro\src\main\resources" />
@@ -81,6 +141,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShiroSpringbootApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kuang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kuang" />
+      <option name="MAIN_CLASS_NAME" value="com.kuang.ShiroSpringbootApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShiroSpringbootApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kuang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kuang" />
+      <option name="MAIN_CLASS_NAME" value="com.kuang.ShiroSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShiroSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shiro-springboot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kuang.ShiroSpringbootApplication" />
@@ -90,6 +181,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShiroSpringbootApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.ShiroSpringbootApplicationTests" />
         <item itemvalue="Application.Quickstart" />
       </list>
     </recent_temporary>
@@ -107,10 +200,22 @@
       <workItem from="1699061895316" duration="616000" />
       <workItem from="1699250837989" duration="659000" />
       <workItem from="1699251529138" duration="5154000" />
+      <workItem from="1699322528935" duration="339000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
