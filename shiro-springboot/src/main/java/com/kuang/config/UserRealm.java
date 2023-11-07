@@ -7,6 +7,7 @@ import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,6 +59,11 @@ public class UserRealm extends AuthorizingRealm {
             //没有这个user,抛出异常：UnknownAccountException
             return null;
         }
+
+        // 登录成功，存放User对象
+        Subject currentSubject = SecurityUtils.getSubject();
+        Session session = currentSubject.getSession();
+        session.setAttribute("loginUser", user);
 
         // 密码认证：由shiro完成
         // 将user对象放在SimpleAuthenticationInfo的principle属性中，在授权的方法中就可以获取User对象
